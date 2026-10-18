@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<supervisorSystem>
+            
+    
+    <transactions>
+                        
+        
+        <transaction id="T001">
+                                    
+            
+            <date>2026-10-01</date>
+                                    
+            
+            <payment>Cash</payment>
+                                    
+            
+            <status>Delivered</status>
+                                    
+            
+            <expiry>2027-10-01</expiry>
+                                
+        
+        </transaction>
+                        
+        
+        <transaction id="T002">
+                                    
+            
+            <date>2026-10-03</date>
+                                    
+            
+            <payment>Card</payment>
+                                    
+            
+            <status>Ready for Delivery</status>
+                                    
+            
+            <expiry>2027-10-03</expiry>
+                                
+        
+        </transaction>
+                        
+        
+        <transaction id="T003">
+                                    
+            
+            <date>2026-10-05</date>
+                                    
+            
+            <payment>Online</payment>
+                                    
+            
+            <status>On the Way</status>
+                                    
+            
+            <expiry>2027-10-05</expiry>
+                                
+        
+        </transaction>
+                    
+    
+    </transactions>
+            
+    
+    <warranties>
+                            
+        
+        <warranty id="W001">
+                                    
+            
+            <transactionID>T001</transactionID>
+                                    
+            
+            <customer>Customer A</customer>
+                                    
+            
+            <productName>Wireless Mouse</productName>
+                                    
+            
+            <startDate>2026-10-01</startDate>
+                                    
+            
+            <expiryDate>2027-10-01</expiryDate>
+                                
+        
+        </warranty>
+                    
+    
+    </warranties>
+            
+    
+    <warranty id="W002">
+                            
+        
+        <transactionID>T002</transactionID>
+                            
+        
+        <customer>Customer B</customer>
+                            
+        
+        <productName>Mechanical Keyboard</productName>
+                            
+        
+        <startDate>2026-10-01</startDate>
+                            
+        
+        <expiryDate>2027-10-01</expiryDate>
+                        
+    
+    </warranty>
+            
+    
+    <warranty id="W003">
+                            
+        
+        <transactionID>T003</transactionID>
+                            
+        
+        <customer>Customer C</customer>
+                            
+        
+        <productName>7-in-1 multi-port adapter</productName>
+                            
+        
+        <startDate>2026-10-01</startDate>
+                            
+        
+        <expiryDate>2027-10-01</expiryDate>
+                        
+    
+    </warranty>
+            
+
+    
+    
+    <orders>
+                        
+        
+        <order id="O001">
+                                    
+            
+            <transactionID>T001</transactionID>
+                                    
+            
+            <customer>Customer A</customer>
+                                    
+            
+            <size>Small</size>
+                                    
+            
+            <status>Delivered</status>
+                                    
+            
+            <teamID>DT001</teamID>
+                                
+        
+        </order>
+                        
+        
+        <order id="O002">
+                                    
+            
+            <transactionID>T002</transactionID>
+                                    
+            
+            <customer>Customer B</customer>
+                                    
+            
+            <size>Medium</size>
+                                    
+            
+            <status>Ready for Delivery</status>
+                                    
+            
+            <teamID>Not Assigned</teamID>
+                                
+        
+        </order>
+                        
+        
+        <order id="O003">
+                                    
+            
+            <transactionID>T003</transactionID>
+                                    
+            
+            <customer>Customer C</customer>
+                                    
+            
+            <size>Large</size>
+                                    
+            
+            <status>On the Way</status>
+                                    
+            
+            <teamID>DT002</teamID>
+                                
+        
+        </order>
+                    
+    
+    </orders>
+            
+    
+    <deliveryTeams>
+                        
+        
+        <team id="DT001">
+                                    
+            
+            <name>Team Alpha</name>
+                                    
+            
+            <status>Available</status>
+                                
+        
+        </team>
+                        
+        
+        <team id="DT002">
+                                    
+            
+            <name>Team Beta</name>
+                                    
+            
+            <status>Busy</status>
+                                
+        
+        </team>
+                        
+        
+        <team id="DT003">
+                                    
+            
+            <name>Team Charlie</name>
+                                    
+            
+            <status>Available</status>
+                                
+        
+        </team>
+                    
+    
+    </deliveryTeams>
+            
+    
+    <deliveryIssues>
+                        
+        
+        <issue id="T001">
+                                    
+            
+            <orderID>0001</orderID>
+                                    
+            
+            <issueType>Delayed Delivery</issueType>
+                                    
+            
+            <description>Delivery arrived late</description>
+                                    
+            
+            <resolution>Rescheduled delivery</resolution>
+                                    
+            
+            <status>Resolved</status>
+                                
+        
+        </issue>
+                    
+        
+        <issue id="T001">
+                        
+            <orderID>0001</orderID>
+                        
+            <type>Item Broken</type>
+                        
+            <action>Replace With A New One</action>
+                    
+        </issue>
+            
+        <issue id="T001">
+            <orderID>0001</orderID>
+            <type>Item Broken</type>
+            <action>Replace With A New One</action>
+        </issue>
+    </deliveryIssues>
+                
+    
+    <issue id="T001">
+                            
+        
+        <orderID>0001</orderID>
+                            
+        
+        <issueType>Item Broken</issueType>
+                            
+        
+        <description>Item Broke While Being Delivered</description>
+                            
+        
+        <resolution>Replace Item With A New One</resolution>
+                            
+        
+        <status>Resolved</status>
+                            
+        
+        <urgency>Yes</urgency>
+                        
+    
+    </issue>
+            
+
+
+
+</supervisorSystem>
